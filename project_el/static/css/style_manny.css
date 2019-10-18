@@ -1,0 +1,85 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#map,
+body,
+html {
+  height: 100%;
+}
+
+.leaflet-popup-content {
+  text-align: center;
+}
+
+/* CSS from the Leaflet-Choropleth documentation */
+.legend {
+  padding: 6px 8px;
+  font: 12px Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #555;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.legend ul {
+  padding: 40px;
+  margin: 10;
+  clear: both;
+  list-style-type: none;
+}
+
+.legend li {
+  display: inline-block;
+  width: 30px;
+  height: 22px;
+}
+
+.legend .min {
+  float: left;
+  padding-bottom: 5px;
+}
+
+.legend .max {
+  float: right;
+}
+
+h1 {
+  text-align: center;
+}
+
+
+.info {
+	padding: 7px 9px;
+	font: 14px/18px Arial, Helvetica, sans-serif;
+	background: white;
+	background: rgba(255,255,255,0.8);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  text-align: center;
+}
+
+
+.legend {
+	line-height: 21px;
+	color: #555;
+}
+.legend i {
+	width: 15px;
+	height: 15px;
+	float: left;
+	margin-right: 10px;
+	opacity: 0.7;
+}
+
+#ui-controls .min {
+  float: left;   
+}
+#ui-controls .max {
+  float: right;
+  margin-right: -15px;
+}
+
