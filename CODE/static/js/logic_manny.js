@@ -2,9 +2,6 @@
 var markers = [];
 var markersLayer = new L.LayerGroup(); // NOTE: Layer is created here!
 
-var info = L.control();
-var legend = L.control({position: 'bottomright'});
-
 
 var updateMap = function(year) {
   // NOTE: The first thing we do here is clear the markers from the layer.
@@ -251,8 +248,7 @@ var updateMap = function(year) {
             console.log('first marker');
 
 
-            ////////////
-            // var info = L.control();
+            //info = L.control();
 
 
             info.onAdd = function (map) {
@@ -330,6 +326,9 @@ function init() {
                                 id: "mapbox.light",
                                 accessToken: "pk.eyJ1IjoiZW1hbmxsYW1hcyIsImEiOiJjazE4aDRpbTkwMXc5M25uMXkxaGVuZm0wIn0.YX9h8sM6yTQnR-F1Z97esw"
     }).addTo(map);
+
+    var info = L.control();
+    var legend = L.control({position: 'bottomright'});
 
 
     // var legend = L.control({position: 'bottomright'});
