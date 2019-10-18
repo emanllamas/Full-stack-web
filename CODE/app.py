@@ -19,7 +19,7 @@ def home():
 
 @app.route("/api/legislators/<year>")
 def ligislator(year=2011):
-    connection_string = "postgres:Riceuniv19!@localhost:5432/project2"
+    connection_string = "vqtlhiwhnbxrnx:f0f1913c5205b1a6df97e4d8b3e58539a564453959efbec7fe95b46e577199aa@ec2-54-225-115-177.compute-1.amazonaws.com:5432/dapac6174vi6rs"
     engine = create_engine(f'postgresql://{connection_string}')
     conn = engine.connect()
     sql = f"select * from legis_{year}"
@@ -31,7 +31,7 @@ def ligislator(year=2011):
 
 @app.route("/api/census/<year>")
 def census(year=2011):
-    connection_string = "postgres:Riceuniv19!@localhost:5432/project2"
+    connection_string = "vqtlhiwhnbxrnx:f0f1913c5205b1a6df97e4d8b3e58539a564453959efbec7fe95b46e577199aa@ec2-54-225-115-177.compute-1.amazonaws.com:5432/dapac6174vi6rs"
     engine = create_engine(f'postgresql://{connection_string}')
     conn = engine.connect()
     sql = f"select * from year_{year}"

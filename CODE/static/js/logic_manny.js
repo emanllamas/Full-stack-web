@@ -2,6 +2,7 @@
 var markers = [];
 var markersLayer = new L.LayerGroup(); // NOTE: Layer is created here!
 
+info = L.control();
 
 var updateMap = function(year) {
   // NOTE: The first thing we do here is clear the markers from the layer.
@@ -248,8 +249,8 @@ var updateMap = function(year) {
             console.log('first marker');
 
 
-            //info = L.control();
-
+            // info = L.control();
+            // legend.addTo(map);
 
             info.onAdd = function (map) {
                 this._div = L.DomUtil.create('div', 'info');
@@ -327,7 +328,6 @@ function init() {
                                 accessToken: "pk.eyJ1IjoiZW1hbmxsYW1hcyIsImEiOiJjazE4aDRpbTkwMXc5M25uMXkxaGVuZm0wIn0.YX9h8sM6yTQnR-F1Z97esw"
     }).addTo(map);
 
-    var info = L.control();
     var legend = L.control({position: 'bottomright'});
 
 
@@ -350,11 +350,11 @@ function init() {
 
         return div;};
             
-    legend.addTo(map);
-
     
     markersLayer.addTo(map);
     console.log('layer group')
+    legend.addTo(map);
+
 
     function $(x) {return document.getElementById(x);} 
 
