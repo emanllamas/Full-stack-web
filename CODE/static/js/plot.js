@@ -45,7 +45,7 @@ function init() {
       color:'blue',
       size:8
     },
-    name: 'Democrat',
+    name: 'Dem',
     x: dem_data.map(row=>row["year"]),
     y: dem_data.map(row=>row['Median Household Income']),
     line: {
@@ -118,7 +118,7 @@ function init_two(){
       color:'red',
       size:8
     },
-    name: 'Republican',
+    name: 'Rep',
     x: rep_data.map(row=>row["year"]),
     y: rep_data.map(row=>row['Median Household Income']),
     line: {
