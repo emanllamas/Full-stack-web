@@ -2,6 +2,7 @@
 var markers = [];
 var markersLayer = new L.LayerGroup(); // NOTE: Layer is created here!
 
+info = L.control();
 
 var updateMap = function(year) {
   // NOTE: The first thing we do here is clear the markers from the layer.
@@ -13,6 +14,7 @@ var updateMap = function(year) {
     // document.getElementById("map").outerHTML = "";
     let legis_url = `/api/legislators/${year}`;
     let census_url = `/api/census/${year}`;
+    console.log("jkj", legis_url)
     
     d3.json('static/data/state_data.json').then(statesData => {
         //console.log("statesdata", statesData);
@@ -25,10 +27,10 @@ var updateMap = function(year) {
             
             let legisControlDict = {};
             legisData.forEach( d => {
-                let curState = d.state.replace('-', ' ');
-                legisControlDict[curState] = d.legis_control;
+                let curState = d.State.replace('-', ' ');
+                legisControlDict[curState] = d.Legis_Control;
             }); 
-            //console.log("legiscontroldict", legisControlDict);
+            console.log("legiscontroldict", legisControlDict);
 
             features = statesData.features;
 
@@ -248,9 +250,8 @@ var updateMap = function(year) {
             console.log('first marker');
 
 
-            ////////////
-            var info = L.control();
-
+            // info = L.control();
+            // legend.addTo(map);
 
             info.onAdd = function (map) {
                 this._div = L.DomUtil.create('div', 'info');
@@ -328,8 +329,10 @@ function init() {
                                 accessToken: "pk.eyJ1IjoiZW1hbmxsYW1hcyIsImEiOiJjazE4aDRpbTkwMXc5M25uMXkxaGVuZm0wIn0.YX9h8sM6yTQnR-F1Z97esw"
     }).addTo(map);
 
-
     var legend = L.control({position: 'bottomright'});
+
+
+    // var legend = L.control({position: 'bottomright'});
 
     legend.onAdd = function (map) {
 
@@ -348,11 +351,11 @@ function init() {
 
         return div;};
             
-    legend.addTo(map);
-
     
     markersLayer.addTo(map);
     console.log('layer group')
+    legend.addTo(map);
+
 
     function $(x) {return document.getElementById(x);} 
 
