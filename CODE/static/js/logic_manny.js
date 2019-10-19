@@ -339,7 +339,7 @@ function init() {
     legend.onAdd = function (map) {
 
 	var div = L.DomUtil.create('div', 'info legend'),
-	parties = ["Republican", "Democrat", "Split", "Non - Partisan: "],
+	parties = ["Republican", "Democrat", "Split", "Non-Partisan: "],
 	labels = [];
 
 	        

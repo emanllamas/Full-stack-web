@@ -59,20 +59,20 @@ function init() {
   var data = [trace1];
 
   var layout = {
-    // legend: {
-    //   x: 0,
-    //   y: 1,
-    //   traceorder: 'normal',
-    //   font: {
-    //     family: 'sans-serif',
-    //     size: 12,
-    //     color: '#000'
-    //   },
-    //   bgcolor: '#E2E2E2',
-    //   bordercolor: '#FFFFFF',
-    //   borderwidth: 2
+    legend: {
+      x: 0,
+      y: 1,
+      traceorder: 'normal',
+      font: {
+        family: 'sans-serif',
+        size: 12,
+        color: '#000'
+      },
+      bgcolor: '#E2E2E2',
+      bordercolor: '#FFFFFF',
+      borderwidth: 2
   
-    // },
+    },
     title: {
       text:name
      ,
@@ -130,20 +130,20 @@ function init_two(){
   data_two=[trace2];
 
   var layout = {
-    // legend: {
-    //   x: 0,
-    //   y: 1,
-    //   traceorder: 'normal',
-    //   font: {
-    //     family: 'sans-serif',
-    //     size: 12,
-    //     color: '#000',
-    //     bordercolor:'black'
-    //   },
-    //   bgcolor: '#E2E2E2',
-    //   bordercolor: '#FFFFFF',
-    //   borderwidth: 2
-    // },
+    legend: {
+      x: 0,
+      y: 1,
+      traceorder: 'normal',
+      font: {
+        family: 'sans-serif',
+        size: 12,
+        color: '#000',
+        bordercolor:'black'
+      },
+      bgcolor: '#E2E2E2',
+      bordercolor: '#FFFFFF',
+      borderwidth: 2
+    },
     title: {
       text:`Median HouseHold Income`,
       font:{
@@ -199,19 +199,19 @@ function init_three(){
   data_three=[trace3];
 
   var layout = {
-    // legend: {
-    //   x: 0,
-    //   y: 1,
-    //   traceorder: 'normal',
-    //   font: {
-    //     family: 'sans-serif',
-    //     size: 12,
-    //     color: '#000'
-    //   },
-    //   bgcolor: '#E2E2E2',
-    //   bordercolor: '#FFFFFF',
-    //   borderwidth: 2
-    // },
+    legend: {
+      x: 0,
+      y: 1,
+      traceorder: 'normal',
+      font: {
+        family: 'sans-serif',
+        size: 12,
+        color: '#000'
+      },
+      bgcolor: '#E2E2E2',
+      bordercolor: '#FFFFFF',
+      borderwidth: 2
+    },
     title: {
       text:`Median HouseHold Income`,
       font:{
