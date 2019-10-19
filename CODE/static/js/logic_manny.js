@@ -1,15 +1,12 @@
 //var access_token = "pk.eyJ1IjoiZW1hbmxsYW1hcyIsImEiOiJjazE4aDRpbTkwMXc5M25uMXkxaGVuZm0wIn0.YX9h8sM6yTQnR-F1Z97esw";
-// let year = '2011'
 var markers = [];
 var markersLayer = new L.LayerGroup(); // NOTE: Layer is created here!
 
-
-info = L.control();
+// info = L.control();
 
 var updateMap = function(year) {
   // NOTE: The first thing we do here is clear the markers from the layer.
     markersLayer.clearLayers();
-
   
 
     //console.log('loading map');
@@ -30,7 +27,7 @@ var updateMap = function(year) {
             
             let legisControlDict = {};
             legisData.forEach( d => {
-                let curState = d.State.replace('-', ' ');
+                let curState = d.State.replace('-', '');
                 legisControlDict[curState] = d.Legis_Control;
             }); 
             console.log("legiscontroldict", legisControlDict);
@@ -317,6 +314,7 @@ corner2 = L.latLng(65.36, -44.47),
 bounds = L.latLngBounds(corner1, corner2);
 
 function init() {
+    info = L.control();
 
     map = L.map("map", {
         maxBounds: bounds
@@ -333,7 +331,7 @@ function init() {
                                 accessToken: "pk.eyJ1IjoiZW1hbmxsYW1hcyIsImEiOiJjazE4aDRpbTkwMXc5M25uMXkxaGVuZm0wIn0.YX9h8sM6yTQnR-F1Z97esw"
     }).addTo(map);
 
-    var legend = L.control({position: 'bottomright'});
+    var legend = L.control({position: 'bottomleft'});
 
 
     // var legend = L.control({position: 'bottomright'});
@@ -354,11 +352,16 @@ function init() {
                                              
 
         return div;};
-            
+
     
-    markersLayer.addTo(map);
-    console.log('layer group')
+            
     legend.addTo(map);
+    
+    d3.json('static/data/state_data.json').then(statesData => {
+        geojson = L.geoJson(statesData).addTo(map)
+    });
+
+    markersLayer.addTo(map);
 
 
     function $(x) {return document.getElementById(x);} 
@@ -375,28 +378,28 @@ function changemapYear(Year) {
     var year = ''
     switch (Year) {
     case "2011":
-      year = 2011;
+      year = '2011';
       break;
     case "2012":
-      year = 2012;
+      year = '2012';
       break;
     case "2013":
-      year = 2013;
+      year = '2013';
       break;
     case "2014":
-        year = 2014;
+        year = '2014';
         break;
     case "2015":
-        year = 2015;
+        year = '2015';
         break;
     case "2016":
-        year = 2016;
+        year = '2016';
         break;
     case "2017":
-        year = 2017;
+        year = '2017';
         break;
     default:
-      year = 2011;
+      year = '2011';
     }
     updateMap(year);
   }

@@ -26,8 +26,8 @@ html {
 }
 
 .legend ul {
-  padding: 0;
-  margin: 0;
+  padding: 40px;
+  margin: 10;
   clear: both;
   list-style-type: none;
 }
@@ -677,7 +677,7 @@ h1 {
   
   .info {
   
-  padding: 6px 8px;
+  padding: 7px 9px;
   
   font: 14px/16px Arial, Helvetica, sans-serif;
   
@@ -775,7 +775,7 @@ h1 {
   
   .info {
   
-    padding: 6px 8px;
+    padding: 7px 9px;
   
     font: 14px/16px Arial, Helvetica, sans-serif;
   
