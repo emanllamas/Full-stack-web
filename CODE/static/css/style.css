@@ -254,27 +254,20 @@ h1 {
   
   
   
+  .main-banner-subheading {
+  
+    font-size: 2rem;  
+    color: black;
+    font: serif;
+  };
+  
   header.main-banner .main-banner-content .main-banner-heading {
   
-    font-size: 40px;
-    font: fantasy;
-  
-  };
-  /* here you chnaged the header font and font size */
-  
-  
-  header.main-banner .main-banner-content .main-banner-subheading {
-  
-    font-size: 2rem;
+    font-size: 4rem;
+    color: black;
+    font-weight: bold;
     font: serif;
-  
-  };
-  /* same here */
-  
-  
-  
-  
-  
+}
   
   
   
@@ -290,18 +283,11 @@ h1 {
   
   
   
-    header.main-banner .main-banner-content .main-banner-heading {
-  
-        font-size: 3rem;
-
-        color: black;
-
-  
-    }
+    
   
   
   
-    header.main-banner .main-banner-content .main-banner-subheading {
+    /* header.main-banner .main-banner-content .main-banner-subheading {
   
         font-size: 2rem;
 
@@ -309,7 +295,7 @@ h1 {
   
     }
   
-  }
+  } */
   
   
   
@@ -364,10 +350,12 @@ h1 {
     padding-left: none;
   
     font-size: 1rem !important;
+
+    font: serif;
   
   
   
-  }
+  };
   
   
   
@@ -389,7 +377,7 @@ h1 {
   
     font-weight: 500;
   
-    font-family: Oswald;
+    font: serif;
   
     padding-left: 0rem;
   
