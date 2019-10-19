@@ -1,13 +1,15 @@
 //var access_token = "pk.eyJ1IjoiZW1hbmxsYW1hcyIsImEiOiJjazE4aDRpbTkwMXc5M25uMXkxaGVuZm0wIn0.YX9h8sM6yTQnR-F1Z97esw";
-let year = '2011'
+// let year = '2011'
 var markers = [];
 var markersLayer = new L.LayerGroup(); // NOTE: Layer is created here!
 
-// info = L.control();
+
+info = L.control();
 
 var updateMap = function(year) {
   // NOTE: The first thing we do here is clear the markers from the layer.
     markersLayer.clearLayers();
+
   
 
     //console.log('loading map');
@@ -315,7 +317,6 @@ corner2 = L.latLng(65.36, -44.47),
 bounds = L.latLngBounds(corner1, corner2);
 
 function init() {
-    info = L.control();
 
     map = L.map("map", {
         maxBounds: bounds
@@ -374,28 +375,28 @@ function changemapYear(Year) {
     var year = ''
     switch (Year) {
     case "2011":
-      year = '2011';
+      year = 2011;
       break;
     case "2012":
-      year = '2012';
+      year = 2012;
       break;
     case "2013":
-      year = '2013';
+      year = 2013;
       break;
     case "2014":
-        year = '2014';
+        year = 2014;
         break;
     case "2015":
-        year = '2015';
+        year = 2015;
         break;
     case "2016":
-        year = '2016';
+        year = 2016;
         break;
     case "2017":
-        year = '2017';
+        year = 2017;
         break;
     default:
-      year = '2011';
+      year = 2011;
     }
     updateMap(year);
   }
