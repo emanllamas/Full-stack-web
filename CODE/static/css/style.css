@@ -32,6 +32,10 @@ html {
   list-style-type: none;
 }
 
+.map-con {
+  display: relative;
+}
+
 .legend li {
   display: inline-block;
   width: 30px;
@@ -141,7 +145,7 @@ h1 {
   
   } */
   
-  
+  .
   
   
   
