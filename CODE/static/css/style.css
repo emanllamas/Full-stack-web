@@ -1066,8 +1066,6 @@ h1 {
   .logo-main-inverted {
   
     filter: invert(0%);
-
-    background: url('/files.slack.com/files-pri/TJXKH5NN9-FPHFC2W92/7565-waving-american-flag.gif');
     
     background-color: rgba(0, 0, 0, .7);
 
