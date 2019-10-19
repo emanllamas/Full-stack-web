@@ -1,5 +1,4 @@
 //var access_token = "pk.eyJ1IjoiZW1hbmxsYW1hcyIsImEiOiJjazE4aDRpbTkwMXc5M25uMXkxaGVuZm0wIn0.YX9h8sM6yTQnR-F1Z97esw";
-let year = '2011'
 var markers = [];
 var markersLayer = new L.LayerGroup(); // NOTE: Layer is created here!
 
@@ -28,7 +27,7 @@ var updateMap = function(year) {
             
             let legisControlDict = {};
             legisData.forEach( d => {
-                let curState = d.State.replace('-', ' ');
+                let curState = d.State.replace('-', '');
                 legisControlDict[curState] = d.Legis_Control;
             }); 
             console.log("legiscontroldict", legisControlDict);
@@ -332,7 +331,7 @@ function init() {
                                 accessToken: "pk.eyJ1IjoiZW1hbmxsYW1hcyIsImEiOiJjazE4aDRpbTkwMXc5M25uMXkxaGVuZm0wIn0.YX9h8sM6yTQnR-F1Z97esw"
     }).addTo(map);
 
-    var legend = L.control({position: 'bottomright'});
+    var legend = L.control({position: 'bottomleft'});
 
 
     // var legend = L.control({position: 'bottomright'});
@@ -340,7 +339,7 @@ function init() {
     legend.onAdd = function (map) {
 
 	var div = L.DomUtil.create('div', 'info legend'),
-	parties = ["Republican", "Democrat", "Split", "Non - Partisan: "],
+	parties = ["Republican", "Democrat", "Split", "Non-Partisan: "],
 	labels = [];
 
 	        
@@ -353,11 +352,16 @@ function init() {
                                              
 
         return div;};
-            
+
     
-    markersLayer.addTo(map);
-    console.log('layer group')
+            
     legend.addTo(map);
+    
+    d3.json('static/data/state_data.json').then(statesData => {
+        geojson = L.geoJson(statesData).addTo(map)
+    });
+
+    markersLayer.addTo(map);
 
 
     function $(x) {return document.getElementById(x);} 

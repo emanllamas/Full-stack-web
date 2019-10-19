@@ -22,12 +22,12 @@ html {
   background: #fff;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
 }
 
 .legend ul {
-  padding: 0;
-  margin: 0;
+  padding: 40px;
+  margin: 10;
   clear: both;
   list-style-type: none;
 }
@@ -260,18 +260,14 @@ h1 {
   
   header.main-banner .main-banner-content .main-banner-heading {
   
-    font-size: 3rem;
-  
-  }
-  
+    font-size: 4rem;  
+  };
   
   
   header.main-banner .main-banner-content .main-banner-subheading {
   
-    font-size: 2rem
-  
-  }
-  
+    font-size: 2rem;  
+  };
   
   
   
@@ -681,7 +677,7 @@ h1 {
   
   .info {
   
-  padding: 6px 8px;
+  padding: 7px 9px;
   
   font: 14px/16px Arial, Helvetica, sans-serif;
   
@@ -779,7 +775,7 @@ h1 {
   
   .info {
   
-    padding: 6px 8px;
+    padding: 7px 9px;
   
     font: 14px/16px Arial, Helvetica, sans-serif;
   
@@ -807,7 +803,7 @@ h1 {
   
   .legend {
   
-    line-height: 18px;
+    line-height: 21px;
   
     width:16%;
   
@@ -823,15 +819,15 @@ h1 {
   
   .legend i {
   
-    width: 18px;
+    width: 15px;
   
-    height: 18px;
+    height: 15px;
   
     float: left;
   
-    margin-right: 8px;
+    margin-right: 10px;
   
-    opacity: 1;
+    opacity: 0.7;
   
   }
   
@@ -1379,5 +1375,4 @@ h1 {
   
   
       }
-  
   
