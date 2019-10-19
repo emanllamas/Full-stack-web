@@ -261,9 +261,9 @@ h1 {
     font: serif;
   };
   
-  header.main-banner .main-banner-content .main-banner-heading {
+  header.main-banner .main-banner-content {
   
-    font-size: 4rem;
+    font-size: 6rem;
     color: black;
     font-weight: bold;
     font: serif;
@@ -349,7 +349,7 @@ h1 {
   
     padding-left: none;
   
-    font-size: 1rem !important;
+    font-size: 1.5rem !important;
 
     font: serif;
   
@@ -359,7 +359,7 @@ h1 {
   
   
   
-  .display-2 {
+  /* .display-2 {
   
     text-align: right;
   
@@ -368,14 +368,14 @@ h1 {
   
   
   }
+   */
   
   
-  
-  h2.display-1,
-  
-  h2.display-2 {
+  h2.display-1 {
   
     font-weight: 500;
+
+    font-size: 2.5;
   
     font: serif;
   
