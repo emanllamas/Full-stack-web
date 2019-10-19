@@ -32,9 +32,6 @@ html {
   list-style-type: none;
 }
 
-.map-con {
-  position: relative;
-}
 
 .legend li {
   display: inline-block;
@@ -1070,9 +1067,9 @@ h1 {
   
     filter: invert(0%);
 
-    background: url('https://files.slack.com/files-pri/TJXKH5NN9-FPHFC2W92/7565-waving-american-flag.gif');
+    background: url('/files.slack.com/files-pri/TJXKH5NN9-FPHFC2W92/7565-waving-american-flag.gif');
     
-    /* background-color: rgba(0, 0, 0, .7); */
+    background-color: rgba(0, 0, 0, .7);
 
     max-width:20px;
 
