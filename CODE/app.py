@@ -22,7 +22,7 @@ def ligislator(year=2011):
     connection_string = "vqtlhiwhnbxrnx:f0f1913c5205b1a6df97e4d8b3e58539a564453959efbec7fe95b46e577199aa@ec2-54-225-115-177.compute-1.amazonaws.com:5432/dapac6174vi6rs"
     engine = create_engine(f'postgresql://{connection_string}')
     conn = engine.connect()
-    sql = f"select * from year_{year}"
+    sql = f"select * from legis_{year}"
     legis_df = pd.read_sql(sql, conn)
     conn.close()
     return legis_df.to_json(orient="records")
