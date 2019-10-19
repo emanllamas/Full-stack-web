@@ -14,6 +14,7 @@ var updateMap = function(year) {
     // document.getElementById("map").outerHTML = "";
     let legis_url = `/api/legislators/${year}`;
     let census_url = `/api/census/${year}`;
+    console.log("jkj", legis_url)
     
     d3.json('static/data/state_data.json').then(statesData => {
         //console.log("statesdata", statesData);
@@ -26,10 +27,10 @@ var updateMap = function(year) {
             
             let legisControlDict = {};
             legisData.forEach( d => {
-                let curState = d.state.replace('-', ' ');
-                legisControlDict[curState] = d.legis_control;
+                let curState = d.State.replace('-', ' ');
+                legisControlDict[curState] = d.Legis_Control;
             }); 
-            //console.log("legiscontroldict", legisControlDict);
+            console.log("legiscontroldict", legisControlDict);
 
             features = statesData.features;
 
