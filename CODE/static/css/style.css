@@ -256,18 +256,20 @@ h1 {
   
   header.main-banner .main-banner-content .main-banner-heading {
   
-    font-size: 3rem;
+    font-size: 40px;
+    font: fantasy;
   
-  }
-  
+  };
+  /* here you chnaged the header font and font size */
   
   
   header.main-banner .main-banner-content .main-banner-subheading {
   
-    font-size: 2rem
+    font-size: 2rem;
+    font: serif;
   
-  }
-  
+  };
+  /* same here */
   
   
   
