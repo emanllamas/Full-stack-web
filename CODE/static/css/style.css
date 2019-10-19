@@ -166,7 +166,9 @@ h1 {
   
     letter-spacing: .1rem;
   
-    font-weight: 700
+    font-weight: 700;
+
+    background-color: rgba(0, 0, 0, .7);
   
   }
   
@@ -180,7 +182,9 @@ h1 {
   
     font-weight: 700;
   
-    letter-spacing: .1rem
+    letter-spacing: .1rem;
+
+    background-color: rgba(0, 0, 0, .7);
   
   }
   
