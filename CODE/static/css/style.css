@@ -254,20 +254,21 @@ h1 {
   
   
   
-  .main-banner-subheading {
+  header.main-banner .main-banner-content .main-banner-heading {
   
-    font-size: 2rem;  
-    color: black;
-    font: serif;
+    font-size: 4rem;  
   };
   
-  header.main-banner .main-banner-content {
   
-    font-size: 6rem;
-    color: black;
-    font-weight: bold;
-    font: serif;
-}
+  header.main-banner .main-banner-content .main-banner-subheading {
+  
+    font-size: 2rem;  
+  };
+  
+  
+  
+  
+  
   
   
   
@@ -283,11 +284,18 @@ h1 {
   
   
   
-    
+    header.main-banner .main-banner-content .main-banner-heading {
+  
+        font-size: 3rem;
+
+        color: black;
+
+  
+    }
   
   
   
-    /* header.main-banner .main-banner-content .main-banner-subheading {
+    header.main-banner .main-banner-content .main-banner-subheading {
   
         font-size: 2rem;
 
@@ -295,7 +303,7 @@ h1 {
   
     }
   
-  } */
+  }
   
   
   
@@ -349,17 +357,15 @@ h1 {
   
     padding-left: none;
   
-    font-size: 1.5rem !important;
-
-    font: serif;
+    font-size: 1rem !important;
   
   
   
-  };
+  }
   
   
   
-  /* .display-2 {
+  .display-2 {
   
     text-align: right;
   
@@ -368,16 +374,16 @@ h1 {
   
   
   }
-   */
   
   
-  h2.display-1 {
+  
+  h2.display-1,
+  
+  h2.display-2 {
   
     font-weight: 500;
-
-    font-size: 2.5;
   
-    font: serif;
+    font-family: Oswald;
   
     padding-left: 0rem;
   
@@ -1365,5 +1371,4 @@ h1 {
   
   
       }
-  
   
