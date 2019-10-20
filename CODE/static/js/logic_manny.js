@@ -27,7 +27,7 @@ var updateMap = function(year) {
             
             let legisControlDict = {};
             legisData.forEach( d => {
-                let curState = d.State.replace('-', '');
+                let curState = d.State.replace('-', ' ');
                 legisControlDict[curState] = d.Legis_Control;
             }); 
             console.log("legiscontroldict", legisControlDict);
